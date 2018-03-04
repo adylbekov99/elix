@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Page description">
+    <meta name="keywords" content="page, keywords">
+    <meta name="theme-color" content="#000000">
+    <meta name="copyright" content="Author">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <meta name="apple-mobile-web-app-title" content="Application Name">
+    <meta name="msapplication-TileImage" content="img/favicons/144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+      @charset "UTF-8";html{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.5;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background:#fff;color:#666}body{margin:0}pre{margin:0 0 20px}pre{font:.875rem/1.5 Consolas,monaco,monospace;color:#666;-moz-tab-size:4;-o-tab-size:4;tab-size:4;overflow:auto;padding:10px;border:1px solid #e5e5e5;border-radius:3px;background:#fff}
+    </style>
+    <link rel="preload" href="css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.min.css"></noscript>
+    <script>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+    <link rel="shortcut icon" href="img/favicons/64x64.png" type="image/png">
+    <link rel="icon" href="img/favicons/152x152.png" type="image/png" sizes="152x152">
+    <link rel="icon" href="img/favicons/256x256.png" type="image/png" sizes="256x256">
+    <link rel="icon" href="img/favicons/512x512.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="img/favicons/152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="img/favicons/256x256.png" sizes="256x256">
+    <link rel="apple-touch-icon" href="img/favicons/512x512.png" sizes="512x512">
+    <link rel="manifest" href="manifest.json">
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.min.js"></script>
+  </head>
+  <body>
+    <div id="modal-call" uk-modal="">
+      <div class="uk-modal-dialog uk-modal-body pop-up-body">
+        <h2 class="text-heading">Закажите</h2>
+        <form>
+          <div class="uk-alert-success" uk-alert=""><a class="uk-alert-close" uk-close=""></a>
+            <h2>Форма отправлена</h2>
+            <p>Спасибо</p>
+          </div>
+          <input class="uk-input modal-input" type="text" placeholder="Имя" required>
+          <input class="uk-input phoneUnique modal-input" type="" placeholder="Телефон" required>
+          <input class="uk-input modal-input" type="email" placeholder="E-mail" required>
+          <button class="uk-button modal-input modal-button" type="button">Отправить</button>
+        </form>
+        <button class="uk-modal-close-outside" type="button" uk-close=""></button>
+      </div>
+    </div>
+    <header>
+      <div class="top-line uk-visible@s">
+        <div class="uk-navbar-container">
+          <div class="uk-container">
+            <nav class="uk-navbar">
+              <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                  <li><a class="top-line-link" href="mailto:company@info.com" target="_blank">
+                      <i class="zmdi zmdi-email"></i>company@info.com</a></li>
+                  <li><a class="top-line-link" href="tel" target="_blank">
+                      <i class="zmdi zmdi-phone"></i>+996 550 50 50 50</a></li>
+                </ul>
+              </div>
+              <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                  <li><a class="top-line-link" href=""><i class="zmdi zmdi-facebook"></i></a></li>
+                  <li><a class="top-line-link" href=""><i class="zmdi zmdi-instagram"></i></a></li>
+                  <li><a class="top-line-link" href=""><i class="zmdi zmdi-vk"></i>		</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <div class="uk-navbar-container main-header uk-visible@s">
+          <div class="uk-container"> 
+            <nav class="uk-navbar">
+              <div class="uk-navbar-left">
+                <div class="logo-block uk-flex uk-flex-middle"><a class="logo-wrap" href="index.html"></a><img class="logo" src="img/png/simple.png" alt=""><span>Компания</span></div>
+              </div>
+              <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                  <li><a href="index.html">Главная</a></li>
+                  <li><a href="goods.html">Товары</a></li>
+                  <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div uk-sticky="sel-target: .mob-navbar; cls-active: uk-navbar-sticky">
+        <nav class="uk-navbar uk-navbar-container uk-hidden@s mob-navbar">
+          <div class="uk-navbar-left"><a href="index.html"><img src="img/png/simple.png" alt="Logo" width="40" style="margin-left: 20px;"></a></div>
+          <div class="uk-navbar-right">
+            <button class="uk-navbar-toggle-icon uk-icon mob-menu-button" type="button" uk-navbar-toggle-icon="" uk-toggle=""></button>
+            <div uk-drop="mode: click; pos: center">
+              <div class="uk-card uk-card-default">
+                <ul class="uk-navbar-nav">
+                  <li><a href="index.html">Главная</a></li>
+                  <li><a href="goods.html">Товары</a></li>
+                  <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="home">
+      <div uk-slideshow="infinite: true; max-height: 500">
+        <div class="uk-position-relative uk-visible-toggle uk-light">
+          <ul class="uk-slideshow-items">
+            <li><img src="img/jpg/one.jpg" alt="" uk-cover=""></li>
+            <li><img src="img/jpg/two.jpg" alt="" uk-cover=""></li>
+            <li><img src="img/jpg/three.jpg" alt="" uk-cover=""></li>
+          </ul><a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous="" uk-slideshow-item="previous"></a><a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next="" uk-slideshow-item="next"></a>
+          <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin" id="slide-buttons"></ul>
+        </div>
+      </div>
+      <div class="category">
+        <div class="uk-container">
+          <h2 class="section-heading">Категории</h2>
+          <div class="uk-grid category-grid uk-grid-match uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-child-width-1-1">
+            <div>
+              <div class="category-item">
+                <div class="uk-cover-container img-cover"><img src="img/png/shirt.png" alt="" uk-cover=""></div><a class="item-heading" href="item.html">Футболка Adidas</a>
+                <p class="desc">Размер 30 </p>
+                <div class="price"> <span>3500 сом	</span></div><a class="see-item" href="#modal-call" uk-toggle="">Заказать</a>
+              </div>
+            </div>
+            <div>
+              <div class="category-item">
+                <div class="uk-cover-container img-cover"><img src="img/png/shirt.png" alt="" uk-cover=""></div><a class="item-heading" href="">Футболка Adidas</a>
+                <p class="desc">Размер 30 </p>
+                <div class="price"> <span>3500 сом	</span></div><a class="see-item" href="#modal-call" uk-toggle="">Заказать</a>
+              </div>
+            </div>
+            <div>
+              <div class="category-item">
+                <div class="uk-cover-container img-cover"><img src="img/png/shirt.png" alt="" uk-cover=""></div><a class="item-heading" href="">Футболка Adidas</a>
+                <p class="desc">Размер 30 </p>
+                <div class="price"> <span>3500 сом	</span></div><a class="see-item" href="#modal-call" uk-toggle="">Заказать</a>
+              </div>
+            </div>
+            <div>
+              <div class="category-item">
+                <div class="uk-cover-container img-cover"><img src="img/png/shirt.png" alt="" uk-cover=""></div><a class="item-heading" href="">Футболка Adidas</a>
+                <p class="desc">Размер 30 </p>
+                <div class="price"> <span>3500 сом	</span></div><a class="see-item" href="#modal-call" uk-toggle="">Заказать</a>
+              </div>
+            </div>
+            <div>
+              <div class="category-item">
+                <div class="uk-cover-container img-cover"><img src="img/png/shirt.png" alt="" uk-cover=""></div><a class="item-heading" href="">Футболка Adidas</a>
+                <p class="desc">Размер 30 </p>
+                <div class="price"> <span>3500 сом	</span></div><a class="see-item" href="#modal-call" uk-toggle="">Заказать</a>
+              </div>
+            </div>
+            <div>
+              <div class="category-item">
+                <div class="uk-cover-container img-cover"><img src="img/png/shirt.png" alt="" uk-cover=""></div><a class="item-heading" href="">Футболка Adidas</a>
+                <p class="desc">Размер 30 </p>
+                <div class="price"> <span>3500 сом	</span></div><a class="see-item" href="#modal-call" uk-toggle="">Заказать</a>
+              </div>
+            </div>
+            <div>
+              <div class="category-item">
+                <div class="uk-cover-container img-cover"><img src="img/png/shirt.png" alt="" uk-cover=""></div><a class="item-heading" href="">Футболка Adidas</a>
+                <p class="desc">Размер 30 </p>
+                <div class="price"> <span>3500 сом	</span></div><a class="see-item" href="#modal-call" uk-toggle="">Заказать</a>
+              </div>
+            </div>
+            <div>
+              <div class="category-item">
+                <div class="uk-cover-container img-cover"><img src="img/png/shirt.png" alt="" uk-cover=""></div><a class="item-heading" href="">Футболка Adidas</a>
+                <p class="desc">Размер 30 </p>
+                <div class="price"> <span>3500 сом	</span></div><a class="see-item" href="#modal-call" uk-toggle="">Заказать</a>
+              </div>
+            </div>
+          </div><a class="show-more" href="">Показать больше</a>
+        </div>
+      </div>
+      <div class="advantage">
+        <div class="uk-container">
+          <h2 class="section-heading">Why you should choose us</h2>
+          <div class="uk-grid ad-grid uk-child-width-1-1 uk-grid-match uk-child-width-1-3@m">
+            <div>
+              <div class="ad-item">
+                <div class="uk-cover-container ad-img"><img src="img/png/case.png" alt="" uk-cover=""></div>
+                <h3 class="ad-heading">Best quality</h3>
+                <p class="ad-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, exercitationem?</p>
+              </div>
+            </div>
+            <div>
+              <div class="ad-item">
+                <div class="uk-cover-container ad-img"><img src="img/png/case.png" alt="" uk-cover=""></div>
+                <h3 class="ad-heading">Best quality</h3>
+                <p class="ad-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, exercitationem?</p>
+              </div>
+            </div>
+            <div>
+              <div class="ad-item">
+                <div class="uk-cover-container ad-img"><img src="img/png/case.png" alt="" uk-cover=""></div>
+                <h3 class="ad-heading">Best quality</h3>
+                <p class="ad-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, exercitationem?</p>
+              </div>
+            </div>
+          </div><a class="show-more order" href="#modal-call" uk-toggle="">Заказать сейчас</a>
+        </div>
+      </div>
+      <div class="feedback">
+        <div class="uk-container">
+          <h2 class="section-heading">Отзывы клиентов</h2>
+          <div uk-slider="">
+            <div class="uk-position-relative uk-visible-toggle uk-light">
+              <ul class="uk-slider-items uk-grid uk-child-width-1-2@s uk-grid-match">
+                <li>
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-body">
+                      <div class="uk-cover-container img-wrapper"><img src="img/jpg/person1.jpg" alt="" uk-cover=""></div>
+                      <h3 class="uk-card-title uk-text-center">Alex Hunter</h3>
+                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-body">
+                      <div class="uk-cover-container img-wrapper"><img src="img/jpg/person2.jpg" alt="" uk-cover=""></div>
+                      <h3 class="uk-card-title uk-text-center">Elena Case</h3>
+                      <p> Lorem ip ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-card uk-card-default">
+                    <div class="uk-card-body">
+                      <div class="uk-cover-container img-wrapper"><img src="img/jpg/person3.jpg" alt="" uk-cover=""></div>
+                      <h3 class="uk-card-title uk-text-center">Hugh Jackman</h3>
+                      <p> Lorem ippsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul><a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous="" uk-slider-item="previous"></a><a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next="" uk-slider-item="next"></a>
+            </div>
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="uk-container">
+        <div class="uk-grid uk-child-width-1-1 footer-icon-grid uk-child-width-1-4@l uk-child-width-1-2@s">
+          <div class="uk-padding-remove">
+            <div class="grid-item uk-flex uk-flex-middle">
+              <div class="icon-wrapper"><img src="img/png/phone.png" alt="Phone"></div>
+              <div class="phone-block"><a href="tel:+996555555555" target="_blank">+996 (555) 50 50 50</a></div>
+            </div>
+          </div>
+          <div class="uk-padding-remove">
+            <div class="grid-item uk-flex uk-flex-middle">
+              <div class="icon-wrapper"><img src="img/png/mail.png" alt="Mail"></div><a href="mailto:company@info.com" target="_blank">company@info.com</a>
+            </div>
+          </div>
+          <div class="uk-padding-remove">
+            <div class="grid-item uk-flex uk-flex-middle">
+              <div class="icon-wrapper"><img src="img/png/loc.png" alt="Location"></div><a href="" target="_blank">г.Бишкек,<br>Московская</a>
+            </div>
+          </div>
+          <div class="uk-padding-remove">
+            <div class="grid-item uk-flex uk-flex-middle no-border">
+              <div class="icon-wrapper"><img src="img/png/map.png" alt="Map"></div><a href="" target="_blank">Показать офис на карте</a>
+            </div>
+          </div>
+        </div>
+        <div class="uk-navbar-nav bottom-navbar">
+          <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+              <li><a class="footer-link" href="index.html">Главная</a></li>
+              <li><a class="footer-link" href="goods.html">Товары</a></li>
+              <li><a class="footer-link" href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+              <li><a class="icon-link" href=""><i class="zmdi zmdi-facebook"></i></a></li>
+              <li><a class="icon-link" href=""><i class="zmdi zmdi-instagram"></i></a></li>
+              <li><a class="icon-link" href=""><i class="zmdi zmdi-vk"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">© 2018 OCOО "Company"</div></div>
+      
+    </footer>
+  </body>
+</html>
